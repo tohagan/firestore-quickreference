@@ -122,7 +122,7 @@ error || false	=> error
 - `get(path: Path)` - Get Document content
 - `getAfter(path: Path)` - Get what the document would be after this operation. Useful in batch writes.
 
-## Storage API Request / Response
+## Storage API - Request
 
 - `request.time: Timestamp`  = Time of request
 
@@ -131,6 +131,8 @@ error || false	=> error
 - `request.resource.metadata`
 - `request.resource.size`  = File size in bytes
 - `request.resource.contentType`
+
+## Storage API - Resource
 
 - `resource.name: String`  = Full file name (including path)
 - `resource.bucket: String`
@@ -148,6 +150,7 @@ error || false	=> error
 - `resource.contentType`
 - `resource.metadata: Map<String, String>` - Developer provided fields
 
+## Storage API - Samples
 
 ```js
 // Allow a read if the file was created less than one hour ago
