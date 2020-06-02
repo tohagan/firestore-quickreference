@@ -2,28 +2,28 @@
 
 ## FireStore Resource
 
-`resource`                      = Requested document
-`resource['__name__']`          = Document path
-`resource.id`                   = Document key
+- `resource`                      = Requested document
+- `resource['__name__']`          = Document path
+- `resource.id`                   = Document key
   - e.g. `resource['__name__'] == /databases/(default)/documents/collection/$(resource.id)`
-`resource.data.{field}`         = Current field values (field => value)
-`request.resource.data.{field}` = Pending document state after operation
+- `resource.data.{field}`         = Current field values (field => value)
+- `request.resource.data.{field}` = Pending document state after operation
 
 ## FireStore Request
 
-`request.auth`
-`request.auth.uid`
-`request.auth.token.email`
-`request.auth.token.email_verified`
-`request.auth.token.phone_number`
-`request.auth.token.name`
-`request.auth.token.firebase.identities`
-`request.auth.token.firebase.sign_in_provider`
-`request.{get|list|create|update|delete}`  = Operation type
-`request.path`  = Resource path
-`request.query.{limit|offset|orderBy}`  = Optional Query
+- request.auth`
+- request.auth.uid`
+- request.auth.token.email`
+- request.auth.token.email_verified`
+- request.auth.token.phone_number`
+- request.auth.token.name`
+- request.auth.token.firebase.identities`
+- request.auth.token.firebase.sign_in_provider`
+- request.{get|list|create|update|delete}`  = Operation type
+- request.path`  = Resource path
+- request.query.{limit|offset|orderBy}`  = Optional Query
    - e.g. `allow list: if request.query.limit <= 50`
-`request.time`  = Time of request
+- `request.time`  = Time of request
   - e.g. `request.time == request.resource.data.updateAt`
 
 ## Types
@@ -124,29 +124,29 @@ error || false	=> error
 
 ## Storage API Request / Response
 
-`request.time: Timestamp`  = Time of request
+- `request.time: Timestamp`  = Time of request
 
-`request.resource.name`  = Full file name (including path)
-`request.resource.bucket`
-`request.resource.metadata`
-`request.resource.size`  = File size in bytes
-`request.resource.contentType`
+- `request.resource.name`  = Full file name (including path)
+- `request.resource.bucket`
+- `request.resource.metadata`
+- `request.resource.size`  = File size in bytes
+- `request.resource.contentType`
 
-`resource.name: String`  = Full file name (including path)
-`resource.bucket: String`
-`resource.generation`  - Object generation. Used for object versioning.
-`resource.metageneration`  - Object generation. Used for object versioning.
-`resource.size: Integer`  = File size in bytes
-`resource.timeCreated: Timestamp`
-`resource.updated: Timestamp`
-`resource.md5Hash: String`
-`resource.crc32c: String`
-`resource.etag`
-`resource.contentDisposition`
-`resource.contentEncoding`
-`resource.contentLanguage`
-`resource.contentType`
-`resource.metadata: Map<String, String>` - Developer provided fields
+- `resource.name: String`  = Full file name (including path)
+- `resource.bucket: String`
+- `resource.generation`  - Object generation. Used for object versioning.
+- `resource.metageneration`  - Object generation. Used for object versioning.
+- `resource.size: Integer`  = File size in bytes
+- `resource.timeCreated: Timestamp`
+- `resource.updated: Timestamp`
+- `resource.md5Hash: String`
+- `resource.crc32c: String`
+- `resource.etag`
+- `resource.contentDisposition`
+- `resource.contentEncoding`
+- `resource.contentLanguage`
+- `resource.contentType`
+- `resource.metadata: Map<String, String>` - Developer provided fields
 
 
 ```js
