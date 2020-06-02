@@ -11,17 +11,17 @@
 
 ## FireStore Request
 
-- request.auth`
-- request.auth.uid`
-- request.auth.token.email`
-- request.auth.token.email_verified`
-- request.auth.token.phone_number`
-- request.auth.token.name`
-- request.auth.token.firebase.identities`
-- request.auth.token.firebase.sign_in_provider`
-- request.{get|list|create|update|delete}`  = Operation type
-- request.path`  = Resource path
-- request.query.{limit|offset|orderBy}`  = Optional Query
+- `request.auth`
+- `request.auth.uid`
+- `request.auth.token.email`
+- `request.auth.token.email_verified`
+- `request.auth.token.phone_number`
+- `request.auth.token.name`
+- `request.auth.token.firebase.identities`
+- `request.auth.token.firebase.sign_in_provider`
+- `request.{get|list|create|update|delete}`  = Operation type
+- `request.path`  = Resource path
+- `request.query.{limit|offset|orderBy}`  = Optional Query
    - e.g. `allow list: if request.query.limit <= 50`
 - `request.time`  = Time of request
   - e.g. `request.time == request.resource.data.updateAt`
