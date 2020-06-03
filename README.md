@@ -1,4 +1,4 @@
-# FireStore & FireStorage Security Language - Quick Reference
+# FireStore & FireStorage Security Rules - Quick Reference
 
 ## Custom Claims
 
