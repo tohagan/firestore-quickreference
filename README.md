@@ -1,8 +1,8 @@
 # FireStore & FireStorage Security Rules - Quick Reference
 
-Firebase developers are JavaScript coders, you'll likely already be very familier with the meaning of the most of the functions and methods available in FireStore and StoreStorage security rules language. I found the official reference a bit slow to use so I created this Quick Reference as a faster and more condensed way to look up familiar methods, properties and function names.
+Firebase developers are JavaScript coders, you'll likely already be very familier with the meaning of the most of the functions and method names available in FireStore and StoreStorage security rules language. I found the official reference a bit slow to use so I created this condensed Quick Reference as a faster way to look up methods, properties and function names and as reminder of constructs and patterns.
 
-It's still a work in progress.  Feel free to contribute or fix but please retain the compact format.
+It's still a work in progress.  Feel free to contribute or fix but please retain the compact format. I think it really needs some "best practice" pattern examples - perhaps on a separate page.
 
 NOTE: This is NOT an official Firebase reference and may be incorrect or out of date. By using this quick reference you agree that it is solely your responsability to confirm the validaity and correctness of this information.
 
