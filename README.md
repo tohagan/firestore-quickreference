@@ -1,5 +1,10 @@
 # FireStore & FireStorage Security Language - Quick Reference
 
+## Custom Claims
+
+Reserved claims: 
+- `amr`, `at_hash`, `aud	`, `auth_time`, `azp`, `c_hash	`, `cnf`, `exp`, `firebase`, `iat`, `iss`, `jti`, `nbf`, `nonce`, `sub`
+
 ## FireStore Resource
 
 - `resource`                      = Requested document
