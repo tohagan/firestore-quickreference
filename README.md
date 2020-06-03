@@ -40,9 +40,9 @@
 Error values don't stop computation of conditions:
 
 ```js
-error && true	  => error
+error && true => error
 error && false	=> false
-error || true	  => true
+error || true	=> true
 error || false	=> error
 ```
 
