@@ -1,9 +1,17 @@
 # FireStore & FireStorage Security Rules - Quick Reference
 
-## Custom Claims
+This is NOT an official Firebase reference and may be incorrect or out of date. By using this quick reference you agree that it is solely your responsability to confirm the validaity and correctness of this information.
 
-Reserved claims: 
-- `amr`, `at_hash`, `aud	`, `auth_time`, `azp`, `c_hash	`, `cnf`, `exp`, `firebase`, `iat`, `iss`, `jti`, `nbf`, `nonce`, `sub`
+## Conditions and Errors
+
+Error values don't stop computation of conditions:
+
+```js
+error && true => error
+error && false	=> false
+error || true	=> true
+error || false	=> error
+```
 
 ## FireStore Resource
 
@@ -31,6 +39,14 @@ Reserved claims:
 - `request.time`  = Time of request
   - e.g. `request.time == request.resource.data.updateAt`
 
+## Custom Claims
+
+- Sets values in `request.auth.token.<key>`
+- [Control Access with Custom Claims and Security Rules](https://firebase.google.com/docs/auth/admin/custom-claims)
+
+Reserved claim keys: 
+- `amr`, `at_hash`, `aud	`, `auth_time`, `azp`, `c_hash	`, `cnf`, `exp`, `firebase`, `iat`, `iss`, `jti`, `nbf`, `nonce`, `sub`
+
 ## Types
 
 - `String`, `Integer`, `Float`, `Boolean`, `Bytes`
@@ -39,17 +55,6 @@ Reserved claims:
 - `LatLng`
 - `List`, `Map`, `MapDiff`, `Set`
 - `Path`, `Request`, `Response`
-
-## Conditions and Errors
-
-Error values don't stop computation of conditions:
-
-```js
-error && true => error
-error && false	=> false
-error || true	=> true
-error || false	=> error
-```
 
 ## Namespace Functions
 
