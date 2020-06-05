@@ -27,11 +27,13 @@ service <<service>> {
 
 ## Permissions Methods
 
-- `read` = Allow `get` and `list`
-- `write` = Allow `create`, `update` or `delete`
-- `get` = Allow a single document read request
-- `list` = Allow queries and collection read requests
-- `create`, `update` or `delete` = Allow `create`, `update` or `delete` document operation
+- `allow get` = Allow a single document read
+- `allow list` = Allow collection reads and queries `db.collection("users").orderBy("name")`
+- `allow read` = Allow `get` and `list`
+- `allow create` - Allow `docRef.set()` or `collectionRef.add()`
+- `allow update` - Allow `docRef.update()` or `docRef.set()`
+- `allow delete` - Allow `docRef.delete()`
+- `allow write` - Allow `create`, `update` or `delete`.
 
 ## Conditions and Errors
 
