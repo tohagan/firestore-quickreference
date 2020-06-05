@@ -25,6 +25,14 @@ service <<service>> {
 - `<<methods>>` ::= `get` | `list` | `create` | `update` | `delete` | `read` | `write`
 - `<<condition>>` ::== A condition based on `request` & `resource` objects and bound variables from `<<path>>`.
 
+## Permissions Methods
+
+- `read` = `get` and `list`
+- `write` = `create`, `update` or `delete`
+- `get` = Allow a single document read request
+- `list` = Allow queries and collection read requests
+- `create`, `update` or `delete` = Allow this document operation
+
 ## Conditions and Errors
 
 Error values don't stop computation of conditions:
