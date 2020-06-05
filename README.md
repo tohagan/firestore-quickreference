@@ -27,11 +27,11 @@ service <<service>> {
 
 ## Permissions Methods
 
-- `read` = `get` and `list`
-- `write` = `create`, `update` or `delete`
+- `read` = Allow `get` and `list`
+- `write` = Allow `create`, `update` or `delete`
 - `get` = Allow a single document read request
 - `list` = Allow queries and collection read requests
-- `create`, `update` or `delete` = Allow this document operation
+- `create`, `update` or `delete` = Allow `create`, `update` or `delete` document operation
 
 ## Conditions and Errors
 
