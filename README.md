@@ -6,6 +6,25 @@ It's still a work in progress.  Feel free to contribute or fix but please retain
 
 NOTE: This is NOT an official Firebase reference and may be incorrect or out of date. By using this quick reference you agree that it is solely your responsability to confirm the validaity and correctness of this information.
 
+## Firestore Rules
+
+```js
+[rules_version = <<version>>]
+service <<service>> {
+  // Match the resource path.
+  match <<path>> {
+    // Allow the request if the following conditions are true.
+    allow <<methods>> : if <<condition>>
+  }
+}
+```
+
+- ``<<version>>`` ::= '2'
+- `<<service>>`` ::= ``cloud.firestore`` |  ``cloud.firestorage``
+- ``<<path>>``  ::= database or storage location 
+- `<<methods>>` ::= `get` | `list` | `create` | `update` | `delete` | `read` | `write`
+- `<<condition>>` ::== A condition based on `request` & `resource` objects and bound variables from `<<path>>`.
+
 ## Conditions and Errors
 
 Error values don't stop computation of conditions:
