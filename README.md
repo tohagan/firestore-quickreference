@@ -46,6 +46,12 @@ error || true	=> true
 error || false	=> error
 ```
 
+## FireStore Validation
+
+- `request` = auth, time, path and create/update/delete data for this operation
+- `resource` =  Document BEFORE this change
+- `request.resource` = Document AFTER this change ... if it were successful!
+
 ## FireStore Resource
 
 - `resource`                      = Requested document
