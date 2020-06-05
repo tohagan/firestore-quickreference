@@ -6,7 +6,7 @@ It's still a work in progress.  Feel free to contribute or fix but please retain
 
 NOTE: This is NOT an official Firebase reference and may be incorrect or out of date. By using this quick reference you agree that it is solely your responsability to confirm the validaity and correctness of this information.
 
-## Firestore Rules
+## Security Rules
 
 ```js
 [rules_version = <<version>>]
