@@ -19,7 +19,7 @@ service <<service>> {
 }
 ```
 
-- ``<<version>>`` ::= '2'
+- ``<<version>>`` ::= ``'2'``
 - ``<<service>>`` ::= ``cloud.firestore`` |  ``cloud.firestorage``
 - ``<<path>>``  ::= database or storage location 
 - `<<methods>>` ::= `get` | `list` | `create` | `update` | `delete` | `read` | `write`
