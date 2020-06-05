@@ -28,6 +28,7 @@ error || false	=> error
 
 ## FireStore Request
 
+- `request.resource.data` - field values AFTER the requested opertion if successful.
 - `request.auth`
 - `request.auth.uid`
 - `request.auth.token.email`
