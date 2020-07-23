@@ -49,7 +49,7 @@ error || false	=> error
 
 According to [this post](https://stackoverflow.com/questions/60217594/is-there-a-way-to-make-the-ternary-operator-work-for-cloud-firestore-security-ru), the ternary expression has now been added.
 
-<<boolean condition>> ? <<true-value> : <<false-value>>
+`<<boolean condition>>` ? `<<true-value>>` : `<<false-value>>`
 
 ## FireStore Validation
 
