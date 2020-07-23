@@ -6,6 +6,21 @@ It's still a work in progress.  Feel free to contribute or fix but please retain
 
 NOTE: This is NOT an official Firebase reference and may be incorrect or out of date. By using this quick reference you agree that it is solely your responsability to confirm the validaity and correctness of this information.
 
+## Reference
+
+**Firestore**
+
+- [Guide: Firebase Security Rules](https://firebase.google.com/docs/rules)
+- [Reference: Firestore Security Rules](https://firebase.google.com/docs/reference/rules/rules)
+- [Blog Jun 17, 2020 - Firestore Security Rules Improvements](https://firebase.googleblog.com/2020/06/new-firestore-security-rules-features.html)
+- [Release Notes](https://firebase.google.com/support/release-notes/security-rules)
+
+**Storage**
+
+- [Guide: Storage Rules](https://firebase.google.com/docs/storage/security)
+- [Reference: Storeage Rules](https://firebase.google.com/docs/reference/security/storage)
+
+
 ## Security Rules
 
 ```js
