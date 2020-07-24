@@ -6,20 +6,23 @@ It's still a work in progress.  Feel free to contribute or fix but please retain
 
 NOTE: This is NOT an official Firebase reference and may be incorrect or out of date. By using this quick reference you agree that it is solely your responsability to confirm the validaity and correctness of this information.
 
-## Reference
+## Official References
 
 **Firestore**
 
 - [Guide: Firebase Security Rules](https://firebase.google.com/docs/rules)
 - [Reference: Firestore Security Rules](https://firebase.google.com/docs/reference/rules/rules)
-- [Blog Jun 17, 2020 - Firestore Security Rules Improvements](https://firebase.googleblog.com/2020/06/new-firestore-security-rules-features.html)
+- [Blog Jun 17, 2020: Firestore Security Rules Improvements](https://firebase.googleblog.com/2020/06/new-firestore-security-rules-features.html)
 - [Release Notes](https://firebase.google.com/support/release-notes/security-rules)
 
 **Storage**
 
 - [Guide: Storage Rules](https://firebase.google.com/docs/storage/security)
-- [Reference: Storeage Rules](https://firebase.google.com/docs/reference/security/storage)
+- [Reference: Storage Rules](https://firebase.google.com/docs/reference/security/storage)
 
+## Other Resources
+
+- [Firestore Security Rules Cookbook](https://fireship.io/snippets/firestore-rules-recipes/)
 
 ## Security Rules
 
@@ -194,30 +197,33 @@ Reserved claim keys:
 
 ## Storage API - Request
 
-- `request.time: Timestamp`  = Time of request
-
-- `request.resource.name`  = Full file name (including path)
-- `request.resource.bucket`
-- `request.resource.metadata`
-- `request.resource.size`  = File size in bytes
-- `request.resource.contentType`
+- `request.time: Timestamp` - Time of request
+- `request.resource.name`  - Full file name (including path)
+- `request.resource.bucket` - Cloud Storage Buckct 
+- `request.resource.metadata` - Map of custom properties
+- `request.resource.size`  - File size in bytes
+- `request.resource.contentType` - MIME content type (e.g 'image/jpg')
 
 ## Storage API - Resource
 
 - `resource.name: String`  = Full file name (including path)
-- `resource.bucket: String`
+- `resource.bucket: String` = Google Cloud Storage bucket
+- `resource.size: Integer`  = File size in bytes
 - `resource.generation`  - Object generation. Used for object versioning.
 - `resource.metageneration`  - Object generation. Used for object versioning.
-- `resource.size: Integer`  = File size in bytes
-- `resource.timeCreated: Timestamp`
-- `resource.updated: Timestamp`
-- `resource.md5Hash: String`
-- `resource.crc32c: String`
-- `resource.etag`
-- `resource.contentDisposition`
-- `resource.contentEncoding`
-- `resource.contentLanguage`
-- `resource.contentType`
+- `resource.timeCreated: Timestamp` - create at
+- `resource.updated: Timestamp` - last update at
+- `resource.md5Hash: String` - MD5 Hash
+- `resource.crc32c: String`  - CRC-32C Hash
+
+Headers sent when downloading the file:
+
+- `resource.etag` - [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag)
+- `resource.cachecontrol` - [Cache-Control](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)
+- `resource.contentDisposition` -  [Content-Disposition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition)
+- `resource.contentEncoding` - [Content-Encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding) of the file (for example 'gzip')
+- `resource.contentLanguage` - [Content-Language](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Language) of the file content (e.g. 'en' or 'es')
+- `resource.contentType` - MIME [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) (e.g 'image/jpg')
 - `resource.metadata: Map<String, String>` - Developer provided fields
 
 ## Storage API - Samples
