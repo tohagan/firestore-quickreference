@@ -20,6 +20,10 @@ NOTE: This is NOT an official Firebase reference and may be incorrect or out of 
 - [Guide: Storage Rules](https://firebase.google.com/docs/storage/security)
 - [Reference: Storage Rules](https://firebase.google.com/docs/reference/security/storage)
 
+**Tech Support**
+
+- [Firestore Google Group](https://groups.google.com/g/google-cloud-firestore-discuss)
+
 ## Other Resources
 
 - [Firestore Security Rules Cookbook](https://fireship.io/snippets/firestore-rules-recipes/)
