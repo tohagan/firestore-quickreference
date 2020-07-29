@@ -24,16 +24,16 @@ NOTE: This is NOT an official Firebase reference and may be incorrect or out of 
 
 - [Firestore Google Group](https://groups.google.com/g/google-cloud-firestore-discuss)
 
+## Other Resources
+
+- [Firestore Security Rules Cookbook](https://fireship.io/snippets/firestore-rules-recipes/)
+- [What does it mean that “Firestore security rules are not filters”?](https://medium.com/firebase-developers/what-does-it-mean-that-firestore-security-rules-are-not-filters-68ec14f3d003)
+
 ## Videos
 
 [![Security Rules! 🔑 | Get to know Cloud Firestore #6](https://img.youtube.com/vi/eW5MdE3ZcAw/0.jpg)](https://www.youtube.com/watch?v=eW5MdE3ZcAw "Security Rules! 🔑 | Get to know Cloud Firestore #6")
 
 [![Introduction to Firebase security rules - Firecasts](https://img.youtube.com/vi/QEuu9X9L-MU/0.jpg)](https://www.youtube.com/watch?v=QEuu9X9L-MU "Introduction to Firebase security rules - Firecasts")
-
-## Other Resources
-
-- [Firestore Security Rules Cookbook](https://fireship.io/snippets/firestore-rules-recipes/)
-- [What does it mean that “Firestore security rules are not filters”?](https://medium.com/firebase-developers/what-does-it-mean-that-firestore-security-rules-are-not-filters-68ec14f3d003)
 
 ## Security Rules
 
