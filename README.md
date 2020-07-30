@@ -28,6 +28,7 @@ NOTE: This is NOT an official Firebase reference and may be incorrect or out of 
 
 - [Firestore Security Rules Cookbook](https://fireship.io/snippets/firestore-rules-recipes/)
 - [What does it mean that “Firestore security rules are not filters”?](https://medium.com/firebase-developers/what-does-it-mean-that-firestore-security-rules-are-not-filters-68ec14f3d003)
+* [The top 10 things to know about Firestore when choosing a database for your app](https://medium.com/firebase-developers/the-top-10-things-to-know-about-firestore-when-choosing-a-database-for-your-app-a3b71b80d979)
 
 ## Videos
 
