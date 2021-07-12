@@ -14,6 +14,7 @@ NOTE: This is NOT an official Firebase reference and may be incorrect or out of 
 - [Reference: Firestore Security Rules](https://firebase.google.com/docs/reference/rules/rules)
 - [Blog Jun 17, 2020: Firestore Security Rules Improvements](https://firebase.googleblog.com/2020/06/new-firestore-security-rules-features.html)
 - [Release Notes](https://firebase.google.com/support/release-notes/security-rules)
+- [Library that provides programmatic access to test Firestore security rules.](https://github.com/psvensson/firestore-security-rules)
 
 **Storage**
 
